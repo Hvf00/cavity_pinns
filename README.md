@@ -41,6 +41,8 @@ The velocity components are derived from the stream function (psi) as follows:
 
 Since this formulation inherently satisfies the continuity equation, there is no need to compute the loss function for the continuity equation.
 
+In both approach, the neural network is fully physics-informed, meaning it is trained without any external data. Instead, the network learns directly from the governing equations themselves, using the physics embedded within them to guide the training process. The network is optimized to satisfy the continuity and momentum equations without requiring traditional dataset inputs.The implementation is done using the PyTorch library, which provides the necessary tools for building, training, and optimizing the neural network efficiently.
+
 ## Neural Network Specifications
 ```
 ----------------------------------------------------------------
@@ -66,8 +68,18 @@ Once the solution approached convergence, the BFGS algorithm was applied to impr
 
 ## Result for  Approach 1
 
-![Result for  Approach 1](Result for  Approach 1.png)
+![Result_for_Approach_1](Result_for_Approach_1.png)
 
 ## Result for  Approach 2
 
-![Result for  Approach 2](Result for  Approach 2.jpg)
+![Result_for_Approach_2](Result_for_Approach_2.jpg)
+
+## Validation 
+The validation of the results was performed both with CFD results (Matlab code) and with the experimental results from [Ghia et al., 1982](doi.org/10.1016/0021-9991(82)90058-4).
+
+![validation](validation.png)
+
+## Reference
+
+* [M. Raissi, et al., Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations, arXiv: 1711.10561 (2017).](https://arxiv.org/abs/1711.10561)
+* [M. Raissi, et al., Physics Informed Deep Learning (Part II): Data-driven Discovery of Nonlinear Partial Differential Equations, arXiv: 1711.10566 (2017).](https://arxiv.org/abs/1711.10566)
