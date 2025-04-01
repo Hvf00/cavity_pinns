@@ -64,3 +64,10 @@ Estimated Total Size (MB): 0.01
 The tanh activation function was used, and optimization was performed using the Adam optimizer.
 Once the solution approached convergence, the BFGS algorithm was applied to improve accuracy.
 
+## Result for  Approach 1
+
+![Result for  Approach 1](Result for  Approach 1.png)
+
+## Result for  Approach 2
+
+![Result for  Approach 2](Result for  Approach 2.jpg)
