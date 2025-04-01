@@ -75,7 +75,7 @@ Once the solution approached convergence, the BFGS algorithm was applied to impr
 ![Result_for_Approach_2](Result_for_Approach_2.jpg)
 
 ## Validation 
-The validation of the results was performed both with CFD results (Matlab code) and with the experimental results from [Ghia et al., 1982](doi.org/10.1016/0021-9991(82)90058-4).
+The validation of the results was performed both with CFD results (Matlab code) and with the experimental results from [Ghia et al., 1982](https://doi.org/10.1016/0021-9991(82)90058-4).
 
 ![validation](validation.png)
 
